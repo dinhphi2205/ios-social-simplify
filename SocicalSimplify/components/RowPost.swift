@@ -14,7 +14,7 @@ struct RowPost: View {
         ZStack{
             Color.white
             VStack {
-                var url = URL(string: "https://i.pravatar.cc/40?u=123")!
+                var url = URL(string: "https://i.pravatar.cc/40?u=\(post.username!.replacingOccurrences(of: " ", with: ""))")!
                 RowUser(avatar: url, username: post.username!, timeInterval: post.time_interval!)
                 Text(post.title).font(FontSize.h4).multilineTextAlignment(.center)
                 Text(post.body).font(FontSize.body).padding(EdgeInsets(top: Space.xs, leading: 0, bottom: 0, trailing: 0)).multilineTextAlignment(.center)

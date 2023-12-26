@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D9D402962B3A6FFE00C2A1C9 /* SocicalSimplifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D402952B3A6FFE00C2A1C9 /* SocicalSimplifyApp.swift */; };
-		D9D402982B3A6FFE00C2A1C9 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D402972B3A6FFE00C2A1C9 /* TimelineView.swift */; };
+		D9D402982B3A6FFE00C2A1C9 /* TimelineScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D402972B3A6FFE00C2A1C9 /* TimelineScreen.swift */; };
 		D9D4029A2B3A700100C2A1C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D402992B3A700100C2A1C9 /* Assets.xcassets */; };
 		D9D4029E2B3A700100C2A1C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9D4029D2B3A700100C2A1C9 /* Preview Assets.xcassets */; };
 		D9D402A82B3A700100C2A1C9 /* SocicalSimplifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D402A72B3A700100C2A1C9 /* SocicalSimplifyTests.swift */; };
@@ -45,7 +45,7 @@
 /* Begin PBXFileReference section */
 		D9D402922B3A6FFE00C2A1C9 /* SocicalSimplify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocicalSimplify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D402952B3A6FFE00C2A1C9 /* SocicalSimplifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocicalSimplifyApp.swift; sourceTree = "<group>"; };
-		D9D402972B3A6FFE00C2A1C9 /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+		D9D402972B3A6FFE00C2A1C9 /* TimelineScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineScreen.swift; sourceTree = "<group>"; };
 		D9D402992B3A700100C2A1C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9D4029B2B3A700100C2A1C9 /* SocicalSimplify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SocicalSimplify.entitlements; sourceTree = "<group>"; };
 		D9D4029D2B3A700100C2A1C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -113,17 +113,16 @@
 		D9D402942B3A6FFE00C2A1C9 /* SocicalSimplify */ = {
 			isa = PBXGroup;
 			children = (
+				D9D402DB2B3ACED200C2A1C9 /* screens */,
 				D9D402D82B3AC3EF00C2A1C9 /* utils */,
 				D9D402CD2B3A824500C2A1C9 /* data */,
 				D9D402C92B3A7A1700C2A1C9 /* theme */,
 				D9D402C62B3A786300C2A1C9 /* components */,
 				D9D402952B3A6FFE00C2A1C9 /* SocicalSimplifyApp.swift */,
-				D9D402972B3A6FFE00C2A1C9 /* TimelineView.swift */,
 				D9D402992B3A700100C2A1C9 /* Assets.xcassets */,
 				D9D4029B2B3A700100C2A1C9 /* SocicalSimplify.entitlements */,
 				D9D4029C2B3A700100C2A1C9 /* Preview Content */,
 				D9D402C22B3A720600C2A1C9 /* ViewCoordinator.swift */,
-				D9D402C42B3A724A00C2A1C9 /* SplashScreen.swift */,
 			);
 			path = SocicalSimplify;
 			sourceTree = "<group>";
@@ -186,6 +185,15 @@
 				D9D402D92B3AC40000C2A1C9 /* Utils.swift */,
 			);
 			path = utils;
+			sourceTree = "<group>";
+		};
+		D9D402DB2B3ACED200C2A1C9 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				D9D402C42B3A724A00C2A1C9 /* SplashScreen.swift */,
+				D9D402972B3A6FFE00C2A1C9 /* TimelineScreen.swift */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,7 +331,7 @@
 				D9D402CB2B3A7A2800C2A1C9 /* theme.swift in Sources */,
 				D9D402C52B3A724A00C2A1C9 /* SplashScreen.swift in Sources */,
 				D9D402D52B3AB02100C2A1C9 /* RowUser.swift in Sources */,
-				D9D402982B3A6FFE00C2A1C9 /* TimelineView.swift in Sources */,
+				D9D402982B3A6FFE00C2A1C9 /* TimelineScreen.swift in Sources */,
 				D9D402C32B3A720600C2A1C9 /* ViewCoordinator.swift in Sources */,
 				D9D402DA2B3AC40000C2A1C9 /* Utils.swift in Sources */,
 				D9D402CF2B3A839500C2A1C9 /* Entities.swift in Sources */,

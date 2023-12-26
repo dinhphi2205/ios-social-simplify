@@ -12,7 +12,7 @@ struct ViewCoordinator: View {
     @State private var isActive = false
     var body: some View {
         if isActive {
-            TimelineView().environmentObject(fetcher)
+            TimelineScreen().environmentObject(fetcher)
         }else {
             SplashScreen(isActive: $isActive)
         }

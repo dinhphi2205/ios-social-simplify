@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TimelineView: View {
+struct TimelineScreen: View {
     @State var loading = true;
     @State var hasError = false;
     @EnvironmentObject var fetcher: SimplifyFetcher
@@ -40,8 +40,8 @@ struct TimelineView: View {
     }
 }
 
-struct TimelineView_Previews: PreviewProvider {
+struct TimelineScreen_Previews: PreviewProvider {
     static var previews: some View {
-        TimelineView()
+        TimelineScreen()
     }
 }
