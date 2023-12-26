@@ -27,17 +27,17 @@ struct TimelineScreen: View {
                     }.listStyle(.plain)
                 }
                 Spacer()
-            }.task {
-                do {
-                    loading = true
-                    try? await fetcher.fetchPosts()
-                    loading = false
-                } catch {
-                    hasError = true
-                    loading = false
-                }
-                
             }
+        }.task {
+            do {
+                loading = true
+                try await fetcher.fetchPosts()
+                loading = false
+            } catch {
+                hasError = true
+                loading = false
+            }
+            
         }
     }
 }

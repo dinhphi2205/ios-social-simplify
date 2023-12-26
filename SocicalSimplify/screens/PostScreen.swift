@@ -38,7 +38,7 @@ struct PostScreen: View {
             }.padding(.horizontal).task {
                 do {
                     loading = true
-                    try? await fetcher.fetchComments(postId: post.id)
+                    try await fetcher.fetchComments(postId: post.id)
                     loading = false
                 } catch {
                     hasError = true
