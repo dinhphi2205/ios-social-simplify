@@ -23,6 +23,8 @@
 		D9D402D52B3AB02100C2A1C9 /* RowUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D402D42B3AB02100C2A1C9 /* RowUser.swift */; };
 		D9D402D72B3AB43200C2A1C9 /* RowPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D402D62B3AB43200C2A1C9 /* RowPost.swift */; };
 		D9D402DA2B3AC40000C2A1C9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D402D92B3AC40000C2A1C9 /* Utils.swift */; };
+		D9D402DD2B3AD09800C2A1C9 /* PostScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D402DC2B3AD09800C2A1C9 /* PostScreen.swift */; };
+		D9D402E32B3AD94B00C2A1C9 /* RowComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D402E22B3AD94B00C2A1C9 /* RowComment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		D9D402D42B3AB02100C2A1C9 /* RowUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowUser.swift; sourceTree = "<group>"; };
 		D9D402D62B3AB43200C2A1C9 /* RowPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowPost.swift; sourceTree = "<group>"; };
 		D9D402D92B3AC40000C2A1C9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		D9D402DC2B3AD09800C2A1C9 /* PostScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostScreen.swift; sourceTree = "<group>"; };
+		D9D402E22B3AD94B00C2A1C9 /* RowComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowComment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +162,7 @@
 				D9D402C72B3A787F00C2A1C9 /* NavBar.swift */,
 				D9D402D42B3AB02100C2A1C9 /* RowUser.swift */,
 				D9D402D62B3AB43200C2A1C9 /* RowPost.swift */,
+				D9D402E22B3AD94B00C2A1C9 /* RowComment.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			children = (
 				D9D402C42B3A724A00C2A1C9 /* SplashScreen.swift */,
 				D9D402972B3A6FFE00C2A1C9 /* TimelineScreen.swift */,
+				D9D402DC2B3AD09800C2A1C9 /* PostScreen.swift */,
 			);
 			path = screens;
 			sourceTree = "<group>";
@@ -331,8 +337,10 @@
 				D9D402CB2B3A7A2800C2A1C9 /* theme.swift in Sources */,
 				D9D402C52B3A724A00C2A1C9 /* SplashScreen.swift in Sources */,
 				D9D402D52B3AB02100C2A1C9 /* RowUser.swift in Sources */,
+				D9D402DD2B3AD09800C2A1C9 /* PostScreen.swift in Sources */,
 				D9D402982B3A6FFE00C2A1C9 /* TimelineScreen.swift in Sources */,
 				D9D402C32B3A720600C2A1C9 /* ViewCoordinator.swift in Sources */,
+				D9D402E32B3AD94B00C2A1C9 /* RowComment.swift in Sources */,
 				D9D402DA2B3AC40000C2A1C9 /* Utils.swift in Sources */,
 				D9D402CF2B3A839500C2A1C9 /* Entities.swift in Sources */,
 				D9D402D32B3AAE0800C2A1C9 /* SimplifyFetcher.swift in Sources */,

@@ -9,24 +9,31 @@ import SwiftUI
 
 struct RowPost: View {
     let post: Post
+    @EnvironmentObject var fetcher: SimplifyFetcher
     
     var body: some View {
         ZStack{
             Color.white
             VStack {
-                var url = URL(string: "https://i.pravatar.cc/40?u=\(post.username!.replacingOccurrences(of: " ", with: ""))")!
+                let url = URL(string: "https://i.pravatar.cc/40?u=\(post.username!.replacingOccurrences(of: " ", with: ""))")!
                 RowUser(avatar: url, username: post.username!, timeInterval: post.time_interval!)
                 Text(post.title).font(FontSize.h4).multilineTextAlignment(.center)
                 Text(post.body).font(FontSize.body).padding(EdgeInsets(top: Space.xs, leading: 0, bottom: 0, trailing: 0)).multilineTextAlignment(.center)
                 Divider().padding(.vertical, Space.md)
-                HStack {
-                    Image(systemName: "text.bubble")
-                        .resizable()
-                        .foregroundColor(Color.gray)
-                        .frame(width: Size.lg, height: Size.lg)
-                    Text("View all comments").font(FontSize.body).padding(EdgeInsets(top: 0, leading: Space.xs, bottom: 0, trailing: 0))
-                    Spacer()
+                NavigationLink {
+                    PostScreen(post: post).environmentObject(fetcher)
+                } label: {
+                    HStack {
+                        Image(systemName: "text.bubble")
+                            .resizable()
+                            .foregroundColor(Color.gray)
+                            .frame(width: Size.lg, height: Size.lg)
+                        Text("View all comments").font(FontSize.body).padding(EdgeInsets(top: 0, leading: Space.xs, bottom: 0, trailing: 0))
+                        Spacer()
+                    }
                 }
+
+                
             }.padding()
         }.cornerRadius(Space.md).padding(.vertical, Space.md).shadow(radius: 5)
     }

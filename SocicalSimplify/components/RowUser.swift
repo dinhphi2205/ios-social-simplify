@@ -26,7 +26,7 @@ struct RowUser: View {
                         ProgressView()
                     }
                 }.frame(height: 40)
-                Text(username).font(FontSize.body).lineLimit(1).padding(EdgeInsets(top: 0, leading: Space.sm, bottom: 0, trailing: 0))
+                Text(username).font(FontSize.bodySemibold).lineLimit(1).padding(EdgeInsets(top: 0, leading: Space.sm, bottom: 0, trailing: 0))
                 Spacer()
                 Text(timeInterval).font(FontSize.caption).lineLimit(1)
             }

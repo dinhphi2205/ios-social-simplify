@@ -34,14 +34,17 @@ class SimplifyFetcher: ObservableObject {
         }
     }
     
-    func fetchComments() async
+    func fetchComments(postId: Int) async
     throws {
         guard let url = URL(string: urlCommentStrings) else { return }
         let (data, response) = try await URLSession.shared.data(for: URLRequest(url: url))
         guard (response as? HTTPURLResponse)?.statusCode == 200 else { throw FetchError.badRequest}
         
         Task {@MainActor in
-            comments = try JSONDecoder().decode([Comment].self, from: data)
+            let data = try JSONDecoder().decode([Comment].self, from: data)
+            comments = data.filter({ comment in
+                comment.post_id == postId
+            })
         }
     }
 

@@ -18,7 +18,6 @@ struct NavBar: View {
                 Text(title).font(FontSize.h4).foregroundColor(Color.white)
                 Spacer()
                 ZStack {
-                    
                     Image(systemName: "message.fill")
                         .resizable()
                         .foregroundColor(Color.white)

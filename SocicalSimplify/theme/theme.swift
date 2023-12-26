@@ -27,6 +27,7 @@ struct FontSize {
     static let h3 = Font.system(size: 20, weight: .bold)
     static let h4 = Font.system(size: 18, weight: .bold)
     static let body = Font.system(size: 16)
+    static let bodySemibold = Font.system(size: 16, weight: .semibold)
     static let caption = Font.system(size: 14)
     static let note = Font.system(size: 12)
     static let badge = Font.system(size: 8)
