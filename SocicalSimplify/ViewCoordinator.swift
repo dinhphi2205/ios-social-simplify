@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ViewCoordinator: View {
+    @StateObject private var fetcher = SimplifyFetcher()
     @State private var isActive = false
     var body: some View {
         if isActive {
-            ContentView()
+            TimelineView().environmentObject(fetcher)
         }else {
             SplashScreen(isActive: $isActive)
         }
